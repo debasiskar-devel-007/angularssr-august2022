@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/angularssraug2022/production/1661068406220-2022-08-21T07:53:26.220Z/angularssraug2022.zip"
+          "S3Key": "serverless/angularssraug2022/production/1661074274229-2022-08-21T09:31:14.229Z/angularssraug2022.zip"
         },
         "Handler": "lambda.universal",
         "Runtime": "nodejs12.x",
@@ -179,14 +179,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersionI75attf4pZMv6HOnAS4qMVTEMjXtbc1CzljWpEA": {
+    "ApiLambdaVersionrwO3ajLZX5CwdYu1vCKQA29M4YqOB6W7bILDJaJpm4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "Fsw8p3wVW8DK9lKANnitI/DAsqD4j598Mwt89IGM87A="
+        "CodeSha256": "QMxAuCCpkjYbtaTMCyWFBI4GjVNgr3RDzODxte4uR8c="
       }
     },
     "ApiGatewayRestApi": {
@@ -312,7 +312,7 @@
         "ApiLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1661068397822": {
+    "ApiGatewayDeployment1661074266415": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -375,7 +375,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionI75attf4pZMv6HOnAS4qMVTEMjXtbc1CzljWpEA"
+        "Ref": "ApiLambdaVersionrwO3ajLZX5CwdYu1vCKQA29M4YqOB6W7bILDJaJpm4"
       },
       "Export": {
         "Name": "sls-angularssraug2022-production-ApiLambdaFunctionQualifiedArn"
