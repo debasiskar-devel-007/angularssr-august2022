@@ -166,7 +166,7 @@ let allRoutes = routeData.routes;
 // Print the entire static routes along with the ones found at the app.
 // console.log('-------- Static Routes Found --------');
 
-allRoutes.forEach((route, idx) =>  console.log(`Route ${idx}: ${route}`));
+allRoutes.forEach((route, idx) => console.log(`Route ${idx}: ${route}`));
 // After mapping, add those to allRoutes array by using addToRoutes function.
 addToRoutes(mappedRoutes, '/');
 
@@ -177,7 +177,7 @@ if (allRoutes.length === 0) {
 
 //  Print the app routes.
 // console.log('---------- App Routes Found ---------');
-allRoutes.forEach((route, idx) =>  console.log(`Route ${idx}: ${route}`));
+allRoutes.forEach((route, idx) => console.log(`Route ${idx}: ${route}`));
 
 // Iterate each route path
 allRoutes.forEach(route => {
@@ -214,7 +214,7 @@ allRoutes.forEach(route => {
 			}),
 		)
 		.then(html => writeFileSync(join(fullPath, 'index.html'), html))
-		.finally(() =>  console.log('🚀 Pre-rendering Finished!'));
+		.finally(() => console.log('🚀 Pre-rendering Finished!'));
 });
 
 function routingMapper(entry: Route): IRoutingMapper {

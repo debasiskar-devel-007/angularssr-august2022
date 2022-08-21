@@ -7,7 +7,7 @@
     "provider": {
       "name": "aws",
       "runtime": "nodejs12.x",
-      "memorySize": 512,
+      "memorySize": 128,
       "timeout": 30,
       "stage": "production",
       "region": "us-east-2",
@@ -175,12 +175,12 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/angularssraug2022/production/1661064698789-2022-08-21T06:51:38.789Z/angularssraug2022.zip"
+                "S3Key": "serverless/angularssraug2022/production/1661068406220-2022-08-21T07:53:26.220Z/angularssraug2022.zip"
               },
               "Handler": "lambda.universal",
               "Runtime": "nodejs12.x",
               "FunctionName": "angularssraug2022-production-api",
-              "MemorySize": 512,
+              "MemorySize": 128,
               "Timeout": 30,
               "Role": {
                 "Fn::GetAtt": [
@@ -193,14 +193,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionyUb6iXhpEEnws7SGWRhr0OM4nEZo0Iy3uG81NyBPfOs": {
+          "ApiLambdaVersionI75attf4pZMv6HOnAS4qMVTEMjXtbc1CzljWpEA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "HLRVVHfRw/zWQvxTERRXMy4z8EIlAu1XVw9UkCKyZoo="
+              "CodeSha256": "Fsw8p3wVW8DK9lKANnitI/DAsqD4j598Mwt89IGM87A="
             }
           },
           "ApiGatewayRestApi": {
@@ -326,7 +326,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1661064690186": {
+          "ApiGatewayDeployment1661068397822": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -389,7 +389,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionyUb6iXhpEEnws7SGWRhr0OM4nEZo0Iy3uG81NyBPfOs"
+              "Ref": "ApiLambdaVersionI75attf4pZMv6HOnAS4qMVTEMjXtbc1CzljWpEA"
             },
             "Export": {
               "Name": "sls-angularssraug2022-production-ApiLambdaFunctionQualifiedArn"
@@ -533,11 +533,11 @@
         ],
         "name": "angularssraug2022-production-api",
         "package": {},
-        "memory": 512,
+        "memory": 128,
         "timeout": 30,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionyUb6iXhpEEnws7SGWRhr0OM4nEZo0Iy3uG81NyBPfOs"
+        "versionLogicalId": "ApiLambdaVersionI75attf4pZMv6HOnAS4qMVTEMjXtbc1CzljWpEA"
       }
     },
     "configValidationMode": "warn",
@@ -566,7 +566,7 @@
         ],
         "artifactsS3KeyDirname": "serverless/angularssraug2022/production/code-artifacts",
         "artifact": "/Users/debasiskar/Documents/projects/angular/angularssr/.serverless/angularssraug2022.zip",
-        "artifactDirectoryName": "serverless/angularssraug2022/production/1661064698789-2022-08-21T06:51:38.789Z"
+        "artifactDirectoryName": "serverless/angularssraug2022/production/1661068406220-2022-08-21T07:53:26.220Z"
       },
       "custom": {
         "$ref": "$[\"service\"][\"custom\"]"
@@ -580,7 +580,7 @@
     "artifact": "/Users/debasiskar/Documents/projects/angular/angularssr/.serverless/angularssraug2022.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/angularssraug2022/production/1661064698789-2022-08-21T06:51:38.789Z",
+    "artifactDirectoryName": "serverless/angularssraug2022/production/1661068406220-2022-08-21T07:53:26.220Z",
     "artifact": "angularssraug2022.zip"
   }
 }

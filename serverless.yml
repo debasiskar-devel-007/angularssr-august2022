@@ -8,7 +8,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
-  memorySize: 512
+  memorySize: 128
   timeout: 30
   stage: production
   region: us-east-2
