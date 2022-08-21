@@ -7,17 +7,23 @@ module.exports = {
   mode: 'none',
   entry: {
     // This is our Express server for Dynamic universal
-    server: './server.ts'
+    server: './server.ts',
+    prerender: './prerender.ts'
   },
   externals: {
-    './dist/server/main': 'require("./server/main")'
+    // './dist/server/main': 'require("./server/main")'
   },
   target: 'node',
-  resolve: { extensions: ['.ts', '.js'] },
+  resolve: {
+    extensions: ['.ts', '.js'], alias: {
+      'express-handlebars': 'handlebars/dist/handlebars.js'
+    }
+  },
   optimization: {
     minimize: false
   },
   output: {
+    libraryTarget: 'commonjs2',
     // Puts the output at the root of the dist folder
     path: path.join(__dirname, 'dist'),
     filename: '[name].js'
